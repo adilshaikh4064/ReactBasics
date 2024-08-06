@@ -34,3 +34,17 @@
 ||  React-fiber:
     https://github.com/acdlite/react-fiber-architecture
     this is the link to article about react fiber.
+
+|| Context-API:
+    -context creation, context provider
+    -dataflow is not that much strong in context api.
+
+|| Redux/Redux-Toolkit:
+    -flux:{flux also has not that much strong dataflow}.
+    -redux:{so, it becomes the better version of flux}.
+            redux took so much time to setup , infact it took more time than context api setup also.
+    -redux-toolkit:
+            it inlcudes batteries which is heavily abstracted and it allows to build the stores more easily.
+            ~ one universal stores and mini-stores inside the universal store.
+            ~ reducers are objects.
+            ~ useSelectors and useDispatchers
