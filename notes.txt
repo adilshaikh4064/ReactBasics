@@ -48,3 +48,6 @@
             ~ one universal stores and mini-stores inside the universal store.
             ~ reducers are objects.
             ~ useSelectors and useDispatchers
+
+
+|| Appwrite, tinyMCE, html react parser, react hook form
