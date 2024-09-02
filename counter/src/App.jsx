@@ -24,7 +24,7 @@ function App() {
     setCounter_name((counter_name)=>(++counter_name))
     setCounter_name((counter_name)=>(++counter_name))
     -> setCounter_name(callback function) takes as an argument 
-      and which in further, takes the previous input of counter_name
+      and which in further, takes the previous state of counter_name
       as its input and it will cause the counter variable to be increased;
     */
 
@@ -34,7 +34,7 @@ function App() {
     setCounter_name(counter+1)
     -> what does the fiber(core of react- implementation) do is that it creates the small packets or 
         bundles of task and send it to multiple nodes. it packets all of the [setCounter_name] in the same packet
-        which causing the same operation to happen. this is the special property of fiber called dipping.
+        which causing the same operation to happen. this is the special property of fiber called diffing.
         which doesn't causes the change in the state of variable.
      */
   }
