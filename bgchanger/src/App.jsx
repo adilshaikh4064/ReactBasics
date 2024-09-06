@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <div className="h-[100vh] w-[100vw] 
+      <div className="h-[100vh] w-[100vw] cd
           grid justify-center content-end" style={{backgroundColor:color}}>
         <div className=" h-min w-max rounded-xl bg-slate-400 mb-12">
           <button className=" inline-black mx-4 rounded-xl w-[80px] h-auto mt-4 mb-4 text-center text-white bg-red-600"

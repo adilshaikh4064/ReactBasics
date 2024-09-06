@@ -10,19 +10,17 @@ function App() {
   const passwordRef=useRef(null)
 
   const passwordGenerator=useCallback(()=>{
-    let pass=''
-    let str='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
-    if(numberAllowed)
-      str+="0123456789"
-    if(charAllowed)
-      str+="`~!@#$%^*()_-+=|\}{[];:',<.>/?"
+    let pass=""
+    let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    if (numberAllowed) str += "0123456789";
+    if (charAllowed) str += "`!@#$%^&*-_=+[]{}~`";
 
     for(let i=1; i<=length; i++){
       let idx=Math.floor(Math.random()*str.length+1)
-      pass+=str[idx]
+      pass += str.charAt(idx);
     }
     setPassword(pass)
-    str=''
+    str = "";
 
   },[length,numberAllowed,charAllowed,setPassword])
 
