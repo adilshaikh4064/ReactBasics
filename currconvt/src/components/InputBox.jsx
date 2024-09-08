@@ -11,7 +11,7 @@ function InputBox({
     currencyDisable=false,
     className=""
 }) {
-    const amountInputId=useId()
+    const amountInputId = useId() // generating new unique id using useId hook.
     console.log(selectCurrency)
     return (
         <div className={`bg-white p-3 rounded-lg text-sm flex `}>

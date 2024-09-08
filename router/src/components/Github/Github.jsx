@@ -4,7 +4,7 @@ import { useLoaderData } from "react-router-dom";
 
 function Github() {
     const data=useLoaderData();
-    // const [data,setData]=useState([1]);
+    // const [data,setData]=useState([]);
     // useEffect(()=>{
     //     fetch('https://api.github.com/users/adilshaikh4064')
     //     .then((res)=>res.json()).
