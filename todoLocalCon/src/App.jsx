@@ -21,6 +21,10 @@ function App() {
     setTodos((prev)=>prev.map((prevTodo)=>prevTodo.id===id?{...prevTodo,completed:!prevTodo.completed}:prevTodo))
   }
   
+  // there's only SETITEM & GETITEM functions are there for local storage.
+  // local storage is of browser only. it recieves and transfers date in key value pairs
+  // and alwaysa stores or transfer in strings format.
+
   useEffect(()=>{
     const todos=JSON.parse(localStorage.getItem('todos'))
     if(todos && todos.length>0){
@@ -42,7 +46,7 @@ function App() {
             </div>
             <div className="flex flex-wrap gap-y-3">
                 {/*Loop and Add TodoItem here */}
-                {todos.forEach((todo)=>(
+                {todos.map((todo)=>(
                   <div key={todo.id} className='w-full'>
                     <TodoItem todo={todo} />
                   </div>
