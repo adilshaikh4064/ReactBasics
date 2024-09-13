@@ -10,7 +10,7 @@ export const todoSlice=createSlice({
     name:'todo',
     initialState,
     reducers:{
-        addTodo:(state,action)=>{
+        addTodo:(state,action)=>{ //state and action comes with in the properties and function of reducers.
             const todo={
                 id:nanoid(),
                 text:action.payload 
